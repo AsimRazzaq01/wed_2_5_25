@@ -14,6 +14,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
@@ -27,7 +28,8 @@ fun MainScreen(modifier: Modifier) {
     Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally ) {
 
         Text(
-            text = "I love Android!",
+            //text = "I love Android!",
+            text = stringResource(id = R.string.app_name),
             fontSize = 40.sp,
             color = Color.Blue,
             fontWeight = FontWeight.Bold
