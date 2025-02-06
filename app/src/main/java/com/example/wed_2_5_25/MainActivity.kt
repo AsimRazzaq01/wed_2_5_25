@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.wed_2_5_25.ui.theme.Wed_2_5_25Theme
@@ -24,7 +25,11 @@ class MainActivity : ComponentActivity() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                 //Text(text = "I Love Android !" , modifier=Modifier.padding(innerPadding))
 
-                    MainScreen(Modifier.padding(innerPadding))
+                    //horizontalAlignment = Alignment.CenterHorizontally
+
+                    MainScreen(Modifier.padding(innerPadding).fillMaxSize())
+
+
 
 
 
@@ -36,18 +41,3 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-//@Composable
-//fun Greeting(name: String, modifier:    Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    Wed_2_5_25Theme {
-//        Greeting("Android")
-//    }
-//}
